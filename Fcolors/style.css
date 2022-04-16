@@ -1,0 +1,527 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #EFEFEF;
+}
+
+.header{
+    height: 90px;
+    width: 100%;
+}
+
+.inner_header{
+    width: 90%;
+    /*width: 1350px;*/
+    margin: auto;
+    height: 100%;
+}
+
+.logo{
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo div{
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.main_content{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.main_content .inner{
+    margin: auto;
+    width: 100%;
+    
+    
+
+}
+
+
+
+
+.Text{
+    height: 140px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+}
+
+.Text div{
+    text-align: center;
+    margin: auto;
+
+}
+
+.Maintext{
+    
+    margin: auto;
+    
+}
+
+.Maintext span{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 72px;
+    /* identical to box height */
+
+
+    color: #4E4E4E;
+}
+
+.Description span{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 27px;
+    /* identical to box height */
+
+
+    color: #4E4E4E;
+
+}
+
+
+.colors_container{
+    width: 83%;
+    height: 432px;
+    margin: auto;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+}
+
+.colors_container_inner{
+    width: 95%;
+    height: 90%;
+    margin: auto;
+    position: relative;
+    display: inline-flex;
+
+    justify-content: center;
+
+}
+
+.colors{
+    transition: .2s ease-in-out;
+    width: 20%;
+    height: 100%;
+    margin-right: 5px;
+    margin-left: 5px;
+    background: #DDD8C4;
+    position: relative;
+
+}
+
+
+.color_code{
+    position: absolute;
+    width: 100%;
+    height: 16%;
+    bottom: 0;    
+    
+
+    background: rgba(18, 16, 14, 0.4);
+}
+
+.click{
+    transition: .3s ease-in;
+    position: absolute;
+    
+    width: 100%;
+    top: -20%;
+    display: flex;
+    margin: auto;
+    opacity: 0;
+    visibility: hidden;
+    border-color: #000 #e000 #0000 #0000;
+    
+    
+    
+    
+}
+/*
+.arrow{
+   
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: aqua;
+}
+.arrowdown{
+    height: 15px;
+    width: 15px;
+    margin-bottom: -100%;
+    background-color: #555;
+    -ms-transform: rotate(20deg);
+    transform: rotate(90deg);
+
+}
+*/
+
+.click::before{
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    margin: auto;
+    background: #fff;
+    bottom: -23%;
+    margin-left: 49%;
+    transform: rotate(45deg);
+    
+}
+
+.click span{
+    background-color: rgb(255, 255, 255);
+    width: 60%;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+
+    
+    
+    background: #FFFFFF;
+    border-radius: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+
+    color: #4E4E4E;
+
+    cursor: pointer;
+
+    
+    
+}
+
+
+
+.color_code .code_container{
+    height: 100%;
+    display: table;
+    margin: auto;
+}
+
+.color_code .code_container span{
+    height: 100%;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+
+
+
+.color_code:hover .click{
+    opacity: 1;
+    visibility: visible;
+
+    animation: hideAnimation 0s ease-out 3s;
+    animation-fill-mode: forwards;
+}
+
+.generate_button{
+    width: 100%;
+    height: 100px;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.generate_button button{
+    width: 238px;
+    height: 57px;
+    margin: auto;
+
+    border: #EFEFEF;
+
+    background: #4B6587;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 27px;
+    /* identical to box height */
+
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+
+}
+
+.generate_button button:hover{
+    cursor: pointer;
+    transition: .3s ease-in;
+    background: #6386b3;
+    
+
+}
+
+
+.credits{
+    position: absolute;
+    top: 95%;
+    margin: auto;
+    display: flex;
+    width: 100%;
+    height: 5%;
+    justify-content: center;
+}
+
+.credits span{
+    margin: auto;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+
+
+@keyframes hideAnimation {
+    to {
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+}
+
+@media (max-width: 1000px) {
+    .logo img{
+        width: 142px;
+        height: 71px;
+    }
+    
+    .Maintext span{
+        font-size: 36px;
+    }
+
+    .Description span{
+        font-size: 18px;
+    }
+    .main_content{
+        height: 900px;
+    }
+
+    .colors_container{
+        width: 95%;
+        height: 585px;
+    }
+
+    .colors_container_inner{
+        
+        display: block;
+        position: relative;
+        height: 90%;
+    
+    
+    }
+
+    .colors{
+        transition: .2s ease-in-out;
+        width: 100%;
+        height: 19%;
+        margin-top: .8%;
+        margin-left: -.01px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .color_code{
+        position: relative;
+        width: 91px;
+        height: 26px;
+        border-radius: 10px;
+        
+    }
+
+    .click{
+        width: 150px;
+        height: 21px;
+        top: -100%; 
+        
+        margin-left: -30%;
+    }
+
+    .click::before{
+        
+        bottom: -15%;
+        
+    }
+
+    .color_code .code_container span{
+        font-size: 15px;
+    }
+
+    .color_code.active .click{
+        opacity: 1;
+        visibility: visible;
+    
+        animation: hideAnimation 0s ease-out 3s;
+        animation-fill-mode: forwards;
+    
+        
+    }
+
+    .generate_button button{
+        width: 243px;
+        height: 42px;
+    }
+
+    .credits{
+        position: relative;
+
+        margin-bottom: -20%;
+    }
+
+    .credits span{
+        font-size: 12px;
+    }
+    
+
+}
+
+@media (max-width: 400px) {
+    .logo img{
+        width: 89px;
+        height: 44px;
+    }
+    .main_content{
+        height: 80vh;
+    }
+    .Maintext span{
+        font-size: 22px;
+        line-height: 33px;
+    }
+
+    .Description{
+        width: 272px;
+        height: 30px;
+    }
+
+    .Description span{
+        font-size: 13px;
+    }
+
+    
+
+    .colors_container{
+        width: 95%;
+        height: 435px;
+        
+    }
+
+    .colors_container_inner{
+        
+        display: block;
+        position: relative;
+        height: 90%;
+        width: 90%;
+    
+    
+    }
+
+    .colors{
+        transition: .2s ease-in-out;
+        width: 100%;
+        height: 19%;
+        margin-top: .8%;
+        margin-left: -.01px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .color_code{
+        position: relative;
+        width: 91px;
+        height: 26px;
+        border-radius: 10px;
+        
+    }
+
+    .click{
+        width: 150px;
+        height: 21px;
+        top: -100%; 
+        
+        margin-left: -30%;
+    }
+
+    .click::before{
+        
+        bottom: -15%;
+        
+    }
+
+    .color_code .code_container span{
+        font-size: 15px;
+    }
+
+    .color_code.active .click{
+        opacity: 1;
+        visibility: visible;
+    
+        animation: hideAnimation 0s ease-out 3s;
+        animation-fill-mode: forwards;
+    
+        
+    }
+
+    
+
+    .generate_button button{
+        width: 168px;
+        height: 35px;
+        font-size: 15px;
+    }
+
+    .credits{
+        height: 5%;
+    }
+
+    .credits span{
+        font-size: 12px;
+    }
+
+}
+
+
+
+
